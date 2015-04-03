@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.7.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+allprojects {
+    tasks.withType(Compile) {
+        options.compilerArgs << "-Xlint:deprecation"
+    }
+}
+android {
+    compileSdkVersion 19
+    buildToolsVersion "17.0.0"
+
+    signingConfigs {
+        release {
+            storeFile file("paydowncalc.keystore")
+            storePassword "tiasp1814"
+            keyAlias "paydowncalc"
+            keyPassword "tiasp1814"
+        }
+    }
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+    }
+    buildTypes {
+        release {
+            runProguard true
+            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+        defaultFlavor {
+            proguardFile 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+	compile 'com.android.support:support-v13:+'
+}

@@ -1,22 +1,16 @@
 # Packet Sender for Android
-This is the Android version of Packet Sender for Desktop.
+This is the Android version of Packet Sender for Desktop. The project is not being actively developed, but it will accept pull requests.
 
-![Packet Sender Android](screenshots/android-screenshot-phone.png)
-
-
-## Download
-Official releases of Packet Sender can be downloaded from Google Play for $1.
-https://play.google.com/store/apps/details?id=com.packetsender.android
-
+<img alt="Packet Sender Android" width="250px" src="screenshots/android-screenshot-phone.png">
 
 ## Parent project
-This is a complete rewrite of the GPL-based desktop version:
+This was originally an attempt to rewrite of the GPL-based desktop version:
 https://github.com/dannagle/PacketSender
 
 
 ## License
 
-MIT
+MIT. Feel free to fork and make it your own. 
 
 
 ## Copyright

@@ -4,13 +4,13 @@ This is the Android version of Packet Sender for Desktop. The project is not bei
 <img alt="Packet Sender Android" width="250px" src="screenshots/android-screenshot-phone.png">
 
 ## Parent project
-This was originally an attempt to rewrite of the GPL-based desktop version:
+This was originally an attempt to rewrite the GPL-based desktop version:
 https://github.com/dannagle/PacketSender
 
 
 ## License
 
-MIT. Feel free to fork and make it your own. 
+MIT. Feel free to fork and make it your own.
 
 
 ## Copyright
